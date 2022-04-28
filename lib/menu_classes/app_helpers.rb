@@ -16,10 +16,9 @@ module AppHelpers
   end
 
   def self.valid_state_input(request_text)
-    input = ''
     print "#{request_text}: "
     input = gets.chomp.to_s.strip.downcase
-    until input == 'good' || input == 'bad'
+    until %w[good bad].include? input
       print 'Please enter GOOD or BAD option: '
       input = gets.chomp.to_s.strip.downcase
     end
@@ -27,10 +26,9 @@ module AppHelpers
   end
 
   def self.valid_bool_input?(request_text)
-    input = ''
     print "#{request_text}: "
     input = gets.chomp.to_s.strip.downcase
-    until input == 'y' || input == 'n'
+    until %w[y n].include? input
       print 'Please enter Y or N option: '
       input = gets.chomp.to_s.strip.downcase
     end
@@ -38,10 +36,9 @@ module AppHelpers
   end
 
   def self.valid_date_input(request_text)
-    date = ''
     print "#{request_text}: "
     date = gets.chomp.to_s.strip.downcase
-    until is_valid_date?(date)
+    until valid_date?(date)
       print 'Please enter a date with correct format: '
       date = gets.chomp.to_s.strip.downcase
     end
@@ -67,7 +64,7 @@ module AppHelpers
     answer
   end
 
-  def self.is_valid_date?(date)
+  def self.valid_date?(date)
     tempdate = date.split(%r{/}, 3)
     date_y = tempdate[0].to_i
     date_m = tempdate[1].to_i

@@ -4,7 +4,7 @@ def app_title
   puts "\n\n"
   puts '***********************************************************'
   puts '*                                                         *'
-  puts "*     WELCOME TO THE CATALOG OF MY THINGS CONSOLE APP     *"
+  puts '*     WELCOME TO THE CATALOG OF MY THINGS CONSOLE APP     *'
   puts '*                                                         *'
   puts '***********************************************************'
 end

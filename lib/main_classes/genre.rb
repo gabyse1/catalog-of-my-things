@@ -14,7 +14,7 @@ class Genre
   end
 
   def remove_item(item)
-    @items = @items.reject { |e| e.class.name == item.class.name && e.id == item.id }
+    @items = @items.reject { |e| e.class.instance_of?(item.class) && e.id == item.id }
   end
 
   def to_json(*args)

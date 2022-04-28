@@ -23,6 +23,7 @@ class SourceMenu
     option = gets.chomp.strip.downcase
     option = AppHelpers.select_valid_item_option(option, 1, @sources_list.length)
     return if option.zero?
+
     if @sources_list[option - 1].items.length.zero?
       @sources_list.delete_at(option - 1)
       puts "\nSource removed successfully\n"

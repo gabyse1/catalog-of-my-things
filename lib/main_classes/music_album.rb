@@ -3,8 +3,8 @@ require_relative './item'
 class MusicAlbum < Item
   attr_accessor :on_spotify
 
-  def initialize(on_spotify, title, publish_date, id: Random.rand(1..1000), archived: false)
-    super(title, publish_date, id: id, archived: archived)
+  def initialize(on_spotify, title, publish_date, **options)
+    super(title, publish_date, **options)
     @on_spotify = on_spotify
   end
 
@@ -17,6 +17,7 @@ class MusicAlbum < Item
       JSON.create_id => self.class.name,
       'id' => @id,
       'on_spotify' => @on_spotify,
+      'title' => @title,
       'publish_date' => @publish_date,
       'archived' => @archived,
       'author' => @author.id,

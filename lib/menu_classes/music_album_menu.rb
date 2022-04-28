@@ -35,6 +35,7 @@ class MusicAlbumMenu
     option = gets.chomp.strip.downcase
     option = AppHelpers.select_valid_item_option(option, 1, @music_albums_list.length)
     return if option.zero?
+
     music_album = @music_albums_list[option - 1]
     @author.authors_list.find { |e| e.id == music_album.author.id }.remove_item(music_album)
     @genre.genres_list.find { |e| e.id == music_album.genre.id }.remove_item(music_album)

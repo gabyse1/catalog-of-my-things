@@ -3,8 +3,8 @@ require_relative './item'
 class Movie < Item
   attr_accessor :silent
 
-  def initialize(silent, title, publish_date, id: Random.rand(1..1000), archived: false)
-    super(title, publish_date, id: id, archived: archived)
+  def initialize(silent, title, publish_date, **options)
+    super(title, publish_date, **options)
     @silent = silent
   end
 
@@ -17,6 +17,7 @@ class Movie < Item
       JSON.create_id => self.class.name,
       'id' => @id,
       'silent' => @silent,
+      'title' => @title,
       'publish_date' => @publish_date,
       'archived' => @archived,
       'author' => @author.id,

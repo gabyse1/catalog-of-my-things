@@ -35,6 +35,7 @@ class MovieMenu
     option = gets.chomp.strip.downcase
     option = AppHelpers.select_valid_item_option(option, 1, @movies_list.length)
     return if option.zero?
+
     movie = @movies_list[option - 1]
     @author.authors_list.find { |e| e.id == movie.author.id }.remove_item(movie)
     @genre.genres_list.find { |e| e.id == movie.genre.id }.remove_item(movie)

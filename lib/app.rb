@@ -55,23 +55,30 @@ class App
     option = gets.chomp.strip.downcase
     option = AppHelpers.select_valid_item_option(option, 1, 8)
     return if option.zero?
+
     delete_options(option)
   end
 
   def execute_menu_options(option)
     case option
-    when 1, 2, 3, 4, 5, 6, 7, 8 then list_options(option)
+    when 1, 2, 3, 4 then list_item_options(option)
+    when 5, 6, 7, 8 then list_extra_options(option)
     when 9, 10, 11, 12 then add_options(option)
     when 13 then delete_menu
     end
   end
 
-  def list_options(option)
+  def list_item_options(option)
     case option
     when 1 then @book_menu.list_books
     when 2 then @game_menu.list_games
     when 3 then @movie_menu.list_movies
     when 4 then @music_album_menu.list_music_albums
+    end
+  end
+
+  def list_extra_options(option)
+    case option
     when 5 then @author_menu.list_authors
     when 6 then @genre_menu.list_genres
     when 7 then @label_menu.list_labels
@@ -90,10 +97,22 @@ class App
 
   def delete_options(option)
     case option
+    when 1, 2, 3, 4 then delete_item_options(option)
+    when 5, 6, 7, 8 then delete_extra_options(option)
+    end
+  end
+
+  def delete_item_options(option)
+    case option
     when 1 then @book_menu.delete_book
     when 2 then @game_menu.delete_game
     when 3 then @movie_menu.delete_movie
     when 4 then @music_album_menu.delete_music_album
+    end
+  end
+
+  def delete_extra_options(option)
+    case option
     when 5 then @author_menu.delete_author
     when 6 then @genre_menu.delete_genre
     when 7 then @label_menu.delete_label

@@ -25,6 +25,7 @@ class AuthorMenu
     option = gets.chomp.strip.downcase
     option = AppHelpers.select_valid_item_option(option, 1, @authors_list.length)
     return if option.zero?
+
     if @authors_list[option - 1].items.length.zero?
       @authors_list.delete_at(option - 1)
       puts "\nAuthor removed successfully\n"

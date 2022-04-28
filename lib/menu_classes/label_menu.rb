@@ -25,6 +25,7 @@ class LabelMenu
     option = gets.chomp.strip.downcase
     option = AppHelpers.select_valid_item_option(option, 1, @labels_list.length)
     return if option.zero?
+
     if @labels_list[option - 1].items.length.zero?
       @labels_list.delete_at(option - 1)
       puts "\nLabel removed successfully\n"

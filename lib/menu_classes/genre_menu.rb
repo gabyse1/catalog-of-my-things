@@ -23,6 +23,7 @@ class GenreMenu
     option = gets.chomp.strip.downcase
     option = AppHelpers.select_valid_item_option(option, 1, @genres_list.length)
     return if option.zero?
+
     if @genres_list[option - 1].items.length.zero?
       @genres_list.delete_at(option - 1)
       puts "\nGenre removed successfully\n"
