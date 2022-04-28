@@ -4,8 +4,16 @@ A console app that help users to keep a record of different types of things they
 
 ## Features
 
-- Displays a menu to choose between differen items.
-- The data is stored in JSON files that correspond to each class.
+- Displays a main menu to select between different tasks.
+- User can add new books, games, movies, and music albums.
+- User can add new authors, genres, labels, and sources as a dependencies for any item.
+- The app also allows users to remove books, games, movies, music albums and its dependencies.
+- To remove items the app display a submenu.
+- All data is stored in JSON files that correspond to books, games, movies, music albums, and its dependencies.
+- The relationship between classes follows the next diagram:
+<p align="center">
+  <img src="./catalog_of_my_things.png" alt="C=UML class diagram for catalog of things" />
+</p>
 
 
 ## Built With

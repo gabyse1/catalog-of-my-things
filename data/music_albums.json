@@ -1,0 +1,38 @@
+[
+  {
+    "json_class": "MusicAlbum",
+    "id": 143,
+    "on_spotify": false,
+    "title": "My Beautiful Dark",
+    "publish_date": "2010/05/03",
+    "archived": false,
+    "author": 166,
+    "genre": 557,
+    "label": 352,
+    "source": 662
+  },
+  {
+    "json_class": "MusicAlbum",
+    "id": 961,
+    "on_spotify": true,
+    "title": "Emotion",
+    "publish_date": "2015/03/12",
+    "archived": false,
+    "author": 729,
+    "genre": 51,
+    "label": 105,
+    "source": 869
+  },
+  {
+    "json_class": "MusicAlbum",
+    "id": 479,
+    "on_spotify": true,
+    "title": "In Colour",
+    "publish_date": "2016/08/21",
+    "archived": false,
+    "author": 87,
+    "genre": 557,
+    "label": 352,
+    "source": 662
+  }
+]

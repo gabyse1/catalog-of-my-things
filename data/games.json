@@ -1,0 +1,41 @@
+[
+  {
+    "json_class": "Game",
+    "id": 136,
+    "multiplayer": false,
+    "last_played_at": "2021/02/05",
+    "title": "Minecraft",
+    "publish_date": "2011/11/18",
+    "archived": false,
+    "author": 104,
+    "genre": 286,
+    "label": 105,
+    "source": 869
+  },
+  {
+    "json_class": "Game",
+    "id": 969,
+    "multiplayer": false,
+    "last_played_at": "2022/01/01",
+    "title": "The Legend of Zelda: Breath of the Wild",
+    "publish_date": "2017/03/03",
+    "archived": false,
+    "author": 413,
+    "genre": 286,
+    "label": 105,
+    "source": 869
+  },
+  {
+    "json_class": "Game",
+    "id": 650,
+    "multiplayer": true,
+    "last_played_at": "2022/04/01",
+    "title": "The Last of Us",
+    "publish_date": "2013/06/14",
+    "archived": false,
+    "author": 699,
+    "genre": 867,
+    "label": 105,
+    "source": 869
+  }
+]

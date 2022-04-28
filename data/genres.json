@@ -1,0 +1,47 @@
+[
+  {
+    "json_class": "Genre",
+    "id": 166,
+    "name": "Literary fiction"
+  },
+  {
+    "json_class": "Genre",
+    "id": 221,
+    "name": "Poetry"
+  },
+  {
+    "json_class": "Genre",
+    "id": 335,
+    "name": "Novel"
+  },
+  {
+    "json_class": "Genre",
+    "id": 286,
+    "name": "Fiction"
+  },
+  {
+    "json_class": "Genre",
+    "id": 867,
+    "name": "Thriller"
+  },
+  {
+    "json_class": "Genre",
+    "id": 84,
+    "name": "Action"
+  },
+  {
+    "json_class": "Genre",
+    "id": 272,
+    "name": "Comedy"
+  },
+  {
+    "json_class": "Genre",
+    "id": 557,
+    "name": "Pop"
+  },
+  {
+    "json_class": "Genre",
+    "id": 51,
+    "name": "Disco"
+  }
+]
