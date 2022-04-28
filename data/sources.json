@@ -1,0 +1,17 @@
+[
+  {
+    "json_class": "Source",
+    "id": 729,
+    "name": "Local shop"
+  },
+  {
+    "json_class": "Source",
+    "id": 869,
+    "name": "Online shop"
+  },
+  {
+    "json_class": "Source",
+    "id": 662,
+    "name": "From a friend"
+  }
+]

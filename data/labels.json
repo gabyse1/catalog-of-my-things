@@ -1,0 +1,14 @@
+[
+  {
+    "json_class": "Label",
+    "id": 105,
+    "title": "New",
+    "color": "Blue"
+  },
+  {
+    "json_class": "Label",
+    "id": 352,
+    "title": "Gift",
+    "color": "Green"
+  }
+]

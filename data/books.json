@@ -1,0 +1,50 @@
+[
+  {
+    "json_class": "Book",
+    "id": 677,
+    "publisher": "Parker Fun",
+    "cover_state": "bad",
+    "publish_date": "2018/12/18",
+    "archived": true,
+    "author": 133,
+    "genre": 166,
+    "label": 105,
+    "source": 729
+  },
+  {
+    "json_class": "Book",
+    "id": 747,
+    "publisher": "Ed. ABC",
+    "cover_state": "good",
+    "publish_date": "2000/01/01",
+    "archived": true,
+    "author": 538,
+    "genre": 221,
+    "label": 105,
+    "source": 729
+  },
+  {
+    "json_class": "Book",
+    "id": 928,
+    "publisher": "Ed. Magnus",
+    "cover_state": "good",
+    "publish_date": "2015/12/01",
+    "archived": false,
+    "author": 450,
+    "genre": 335,
+    "label": 105,
+    "source": 869
+  },
+  {
+    "json_class": "Book",
+    "id": 992,
+    "publisher": "Ed. SS",
+    "cover_state": "good",
+    "publish_date": "2020/06/02",
+    "archived": false,
+    "author": 869,
+    "genre": 166,
+    "label": 352,
+    "source": 662
+  }
+]

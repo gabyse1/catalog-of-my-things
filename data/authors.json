@@ -1,0 +1,80 @@
+[
+  {
+    "json_class": "Author",
+    "id": 133,
+    "first_name": "Ernest",
+    "last_name": "Hemingway"
+  },
+  {
+    "json_class": "Author",
+    "id": 538,
+    "first_name": "César",
+    "last_name": "Vallejo"
+  },
+  {
+    "json_class": "Author",
+    "id": 450,
+    "first_name": "José María",
+    "last_name": "Arguedas"
+  },
+  {
+    "json_class": "Author",
+    "id": 869,
+    "first_name": "Brit",
+    "last_name": "Bennett"
+  },
+  {
+    "json_class": "Author",
+    "id": 104,
+    "first_name": "Mojang",
+    "last_name": "Studios"
+  },
+  {
+    "json_class": "Author",
+    "id": 413,
+    "first_name": "Eiji",
+    "last_name": "Aouma"
+  },
+  {
+    "json_class": "Author",
+    "id": 699,
+    "first_name": "Naughty",
+    "last_name": "Dog"
+  },
+  {
+    "json_class": "Author",
+    "id": 723,
+    "first_name": "Peter",
+    "last_name": "Jackson"
+  },
+  {
+    "json_class": "Author",
+    "id": 707,
+    "first_name": "Christopher",
+    "last_name": "Nolan"
+  },
+  {
+    "json_class": "Author",
+    "id": 39,
+    "first_name": "Michael",
+    "last_name": "Rianda"
+  },
+  {
+    "json_class": "Author",
+    "id": 166,
+    "first_name": "Kanye",
+    "last_name": "West"
+  },
+  {
+    "json_class": "Author",
+    "id": 729,
+    "first_name": "Carly",
+    "last_name": "Rae"
+  },
+  {
+    "json_class": "Author",
+    "id": 87,
+    "first_name": "Jamie",
+    "last_name": "XX"
+  }
+]
