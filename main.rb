@@ -1,39 +1,26 @@
-require_relative 'classes/app'
+require_relative 'lib/app'
 
-def display_menu
-  puts "\n\nPlease choose an option by entering a number:"
-  puts '1 - List books, music albums, movies, or games'
-  puts '2 - Add books, music albums, movies, or games'
-  puts '3 - List genres, labels, authors, or sources'
-  puts '4 - Add genres, labels, authors, or sources'
-  puts '5 - Exit'
-end
-
-def execute_menu_options(app, option)
-  puts "\n"
-  case option
-  when 1
-    app.list_items
-  when 2
-    app.add_items
-  when 3
-    app.list_extras
-  when 4
-    app.add_extras
-  end
+def app_title
+  puts "\n\n"
+  puts '***********************************************************'
+  puts '*                                                         *'
+  puts "*     WELCOME TO THE CATALOG OF MY THINGS CONSOLE APP     *"
+  puts '*                                                         *'
+  puts '***********************************************************'
 end
 
 def main
   app = App.new
   option = 0
-  while option != 5
-    display_menu
-    print '[Input the number]: '
+  app_title
+  while option != 14
+    app.main_menu
+    print "\n[Enter an option]: "
     option = gets.chomp.to_i
-    execute_menu_options(app, option) if option >= 1 && option <= 4
+    app.execute_menu_options(option) if option >= 1 && option <= 13
   end
-  app.persist_data
-  puts "Thank you for using this app!\n\n"
+  app.store_data_to_json
+  puts "\nThank you for using this app!\n\n"
 end
 
 main
